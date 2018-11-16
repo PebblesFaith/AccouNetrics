@@ -18,8 +18,8 @@
     }
 
     body {
-        color: black;
-        font-family: sans-serif;
+        color: rgb(162, 121, 0);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 15px;
         line-height: 100%;
         text-align: center;
@@ -47,23 +47,119 @@
         flex: 1;
         padding: 1rem;
     }
+
+    p.footerp1 {
+    font-size: 14px;
+    color: rgb(162, 121, 0); 
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+input[type=text], input[type=password] {
+    width: 75%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(107, 107, 107);
+    color: white;
+    padding: 14px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: 20%;
+    padding: 8px 18px;
+    background-color: rgb(162, 121, 0);
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 175px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 75%;
+    }
+}
 </style>
+
+
+
+
+
 
 <body>
     <section class="container">
         <div class="left-half">
 
-        </div>
-        </div>
-        </div>
+            <form action="/action_page.php">
 
-        <script>
-            $(document).ready(function () {
-                $("#myBtn").click(function () {
-                    $("#myModal").modal();
+                <div class="container">
+                    <label for="uname"><b></b><br>
+                        <input type="text" placeholder="Enter Username" name="uname" required></label>
+
+                    <label for="psw"><b></b><br>
+                        <input type="password" placeholder="Enter Password" name="psw" required></label>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <br>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+
+            <script>
+                $(document).ready(function () {
+                    $("#myBtn").click(function () {
+                        $("#myModal").modal();
+                    });
                 });
-            });
-        </script>
+            </script>
 
 
         </div>
@@ -77,8 +173,8 @@
 
     <div class="w3-container w3-white">
         <p class="footerp1">2019 AccouNetrics</p>
-    </div>
-
+    </div>"
 </body>
+
 
 </html>
