@@ -4,60 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
 </head>
 
 <style>
-    .triangle {
-        width: 270px;
-        height: 270px;
-        display: block;
-        margin-top: auto;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: auto;
-
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
         background-color: white;
-        border-top: 150px solid white;
-        outline-offset: 15px;
-        border-right: 125px solid rgb(162, 121, 0);
-        border-left: 125px solid rgb(162, 121, 0);
-        border-bottom: 150px solid white;
-        resize: both;
-        overflow: auto;
-    }
-
-    p.footerp1 {
-        font-size: 14px;
         color: rgb(162, 121, 0);
         text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
 
-    div.sticky {
-        position: -webkit-sticky;
-        position: sticky;
+
+        font-size: 14px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
     }
 </style>
 
+
+
 <body>
 
-    <div class="triangle">
-        <br>
-        <br>
-        <br>
-        <a href="index1.html">
-            <img alt="W3Schools" src="AccouNetricsExpandShrink.png" style="width: 100%">
-        </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3>Column 1</h3>
+                <p>Lorem ipsum dolor..</p>
+                <p>Ut enim ad..</p>
+            </div>
+
+
+            <div class="col-sm-6">
+                <div class="triangle">
+                    <a href="index1.html">
+                        <img alt="W3Schools" src="AccouNetricsExpandShrink.png" style="width: 100%">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <h3>Column 3</h3>
+                <p>Lorem ipsum dolor..</p>
+                <p>Ut enim ad..</p>
+            </div>
+        </div>
     </div>
 
-    <div class="w3-container w3-white">
-        <p class="footerp1">2019 AccouNetrics</p>
-    </div>"
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <p>2019 AccouNetrics</p>
+    </div>
+
 
 </body>
 
